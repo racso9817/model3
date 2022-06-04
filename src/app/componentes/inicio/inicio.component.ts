@@ -45,6 +45,7 @@ export class InicioComponent implements OnInit {
   }]
 
   constructor(config: NgbCarouselConfig) {
+    config.interval = 10000;
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
    }

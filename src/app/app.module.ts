@@ -10,6 +10,7 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -44,10 +44,58 @@ export class InicioComponent implements OnInit {
     desc: "Tanto la diabetes como las enfermedades isquémicas del corazón son las principales causas de muerte en Ecuador, en nuestro instituto el trabajo coordinado de un equipo multidisciplinario en pro de su salud le ayudará a prevenir complicaciones."
   }]
 
+
+  // Objeto para carrusel
+
+  docList = [
+    {
+      name: 'Pizza',
+      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80',
+    },
+    {
+      name: 'Hamburguesa',
+      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80',
+    },
+    {
+      name: 'Hot Dog',
+      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80',
+    },
+    {
+      name: 'Empanada',
+      image: 'https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80',
+    },
+  ];
+
+  //pagination variables
+  page = 1;
+  pageSize = 2;
+  foodListLength = this.docList.length;
+
+  responsiveOptions:any;
+
+
   constructor(config: NgbCarouselConfig) {
     config.interval = 10000;
     config.showNavigationArrows = true;
     config.showNavigationIndicators = true;
+
+    this.responsiveOptions = [
+      {
+          breakpoint: '1024px',
+          numVisible: 3,
+          numScroll: 1
+      },
+      {
+          breakpoint: '768px',
+          numVisible: 3,
+          numScroll: 1
+      },
+      {
+          breakpoint: '560px',
+          numVisible: 1,
+          numScroll: 1
+      }
+    ];
    }
 
   ngOnInit(): void {

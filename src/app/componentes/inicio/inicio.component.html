@@ -1,1 +1,44 @@
-<p>inicio works!</p>
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+  [showNavigationIndicators]="showNavigationIndicators">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img [src]="image" class="img-fluid" alt="Random slide">
+    </div>
+    <div class="carousel-caption position-absolute top-20 text-dark">
+      <h1>Instituto Médico Kalifa</h1>
+      <p>Donde tu bienestar es nuestra prioridad</p>
+      <button class="btn btn-dark" placement="bottom" ngbTooltip={{tooltipMsg}}>Agenda tu cita</button>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="pt-5 pb-5">
+  <h1 class="text-center">Nuestros Servicios</h1>
+</div>
+<!-- CARDS -->
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div *ngFor="let i of servicios" class="col">
+      <div class="card border-0 text-center">
+        <img src={{i.image}} class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title font-weight-bolder">{{i.name}}</h3>
+          <!-- <p class="card-text">{{i.desc}}</p> -->
+          <a href="#" class="btn btn-dark">Saber más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-3">
+  <div class="row">
+    <div class="col">
+      <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+    </div>
+    <div class="col">
+      <h3 class="text-center font-weight-bolder">Title</h3>
+      <p class="text-justify">Especializado en la Academia Médica Estatal de Voronezh "Burdenko" en Rusia,  doctor en medicina por la Universidad Estatal de Belgorod en Rusia. Actualmente se desempeña como endocrinólogo en SOLCA Guayaquil y en el Omni Hospital.</p>
+    </div>
+  </div>
+</div>

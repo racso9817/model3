@@ -7,8 +7,8 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
 
 const routes: Routes = [
   { path: '', pathMatch: 'full' , component: InicioComponent },  
-  { path: '**', redirectTo: 'inicio' },
-  { path: 'inico', component: InicioComponent },
+  // { path: '**', redirectTo: 'inicio' },
+  { path: 'inicio', component: InicioComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'contacto', component: ContactoComponent }

@@ -22,8 +22,8 @@
       <div class="card border-0 text-center">
         <img src={{i.image}} class="card-img-top img-fluid" alt="...">
         <div class="card-body">
-          <h3 class="card-title fw-bold">{{i.name}}</h3>
-          <p class="card-text">{{i.desc}}</p>
+          <!-- <h3 class="card-title fw-bold">{{i.name}}</h3>
+          <p class="card-text">{{i.desc}}</p> -->
           <a href="#" class="btn btn-dark">Saber más</a>
         </div>
       </div>
@@ -46,13 +46,13 @@
 <div class="container pt-5 pb-5">
 <div>
   <div class="d-flex justify-content-center card-title pt-5 text-white">
-    <h1 class="text-3xl mb-2 font-semibold leading-normal text-center text-black" >Carrusel de Comida</h1>
+    <h1 class="text-3xl mb-2 font-semibold leading-normal text-center text-black" >Nuestras Instalaciones</h1>
   </div>
-  <div class="d-flex justify-content-center description text-black">
+  <!-- <div class="d-flex justify-content-center description text-black">
     <h6 class="text-lg leading-relaxed mt-4 mb-4 text-center" >Suspendisse Commodo Auctor Molestie Mauris Arisusv.
       <span style="text-align: center; display: block;">Massaconsequat Pharetra Suspendisse</span>
     </h6>
-  </div>
+  </div> -->
 
   <div class="m-auto pt-4 item-container">
     <p-carousel [value]="docList" styleClass="custom-carousel" [numVisible]="1" [numScroll]="1" [circular]="true"
@@ -61,7 +61,7 @@
       <ng-template let-docList pTemplate="item">
         <div class="card-group">
           <div class="item card border-0">
-            <img src="{{docList.image}}" class="card-img-top img-fluid w-75 h-75 position-absolute top-50 start-50 translate-middle" alt="...">
+            <img src="{{docList.image}}" class="card-img-top img-fluid w-75 mx-auto" alt="...">
             <div class="card-body">
               <h5 class="card-title font-semibold text-lg leading-relaxed mt-4 text-center">{{docList.desc}}</h5>
             </div>

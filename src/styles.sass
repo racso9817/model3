@@ -12,3 +12,16 @@ body
 
 html
     overflow-x: hidden
+
+::ng-deep
+    .p-carousel .p-carousel-indicators .p-carousel-indicator button
+        width: 1vw
+        height: 1vw
+        border-radius: 100%
+
+@media screen and ( max-width:  560px)
+    ::ng-deep
+        .p-carousel .p-carousel-indicators .p-carousel-indicator button
+            width: 3vw
+            height: 3vw
+    

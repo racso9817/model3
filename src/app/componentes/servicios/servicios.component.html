@@ -1,1 +1,90 @@
-<p>servicios works!</p>
+<div class="font-monospace">
+    <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+    [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="picsum-img-wrapper">
+        <img [src]="image" class="img-fluid" alt="Random slide">
+      </div>
+      <div class="carousel-caption position-absolute top-20 text-dark">
+        <h1>Servicios Médicos</h1>
+        <p>Condiciones médicas y enfermedades</p>
+        <!-- <button class="btn btn-dark" placement="bottom" ngbTooltip={{tooltipMsg}}>Agenda tu cita</button> -->
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  
+<div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col">
+        <h3 class="text-center fw-bold pt-3">Tiroides</h3>
+        <p class="text-justify lh-lg">Tratamiento de hipotiroidismo, hipertiroidismo, nódulos e incluso cáncer de tiroides. Además en nuestro instituto somos pioneros en la realización de biopsia de tiroides con citología in situ, y el tratamiento de los nódulos de tiroides sin cirugía con la innovadora ablación con radiofrecuencia.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col ">
+        <h3 class="text-center fw-bold pt-3">Sobrepeso</h3>
+        <p class="text-justify lh-lg">Diagnostico y tratamiento de las alteraciones hormonales asociadas al exceso de adiposidad. Nuestros especialistas le ayudarán a bajar de peso desde la planificación nutricional y tratamiento de desordenes hormonales hasta la cirugía bariátrica.</p>
+      </div>
+      <div class="col order-first order-md-last">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col">
+        <h3 class="text-center fw-bold pt-3">Diabetes</h3>
+        <p class="text-justify lh-lg">El tratamiento integral de la diabetes es el objetivo de nuestros especialistas, tener todos los aspectos controlados ayudará a prevenir de forma efectiva las complicaciones asociadas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col">
+        <h3 class="text-center fw-bold pt-3">Alteraciones Hormonales</h3>
+        <p class="text-justify lh-lg">El manejo de enfermedades como síndrome de ovario poliquístico, adenomas de hipófisis, hiperprolactinemia, acromegalia, deficiencia de hormona de crecimiento, enfermedad de Cushing,</p>
+      </div>
+      <div class="col order-first order-md-last">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+      <div class="col">
+        <h3 class="text-center fw-bold pt-3">Neuro Psicología</h3>
+        <p class="text-justify lh-lg">En la medicina moderna el tratamiento integral de una persona y sus dolencias incluye no sólo la enfermedades somáticas sino también la salud mental y emocional.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5">
+    <div class="row row-cols-1 row-cols-sm-2">
+      <div class="col">
+        <h3 class="text-center fw-bold pt-3">Cardiología</h3>
+        <p class="text-justify lh-lg">Tanto la diabetes como las enfermedades isquémicas del corazón son las principales causas de muerte en Ecuador, en nuestro instituto el trabajo coordinado de un equipo multidisciplinario en pro de su salud le ayudará a prevenir complicaciones.</p>
+      </div>
+      <div class="col order-first order-md-last">
+        <img src="assets/backgrounds/medical.jpeg" class="img-fluid rounded" alt="">
+      </div>
+    </div>
+  </div>
+            
+</div>
+
+  

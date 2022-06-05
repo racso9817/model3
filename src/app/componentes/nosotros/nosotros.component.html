@@ -1,1 +1,28 @@
-<p>nosotros works!</p>
+<div class="font-monospace">
+    <div class="container pt-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <h3 class="text-center fw-bold pt-3">Dr. Kalifa</h3>
+                <p class="text-justify lh-lg">Especializado en la Academia Médica Estatal de Voronezh "Burdenko" en Rusia,  doctor en medicina por la Universidad Estatal de Belgorod en Rusia.</p>
+            </div>
+            <div class="col">
+                <img src="/assets/backgrounds/doctor.png" class="img-fluid" alt="...">
+            </div>
+          </div>
+    </div>
+    <div>
+        <h3 class="ms-5 fw-bold pt-3">Servicios</h3>
+    </div>
+    <div class="container pt-5">
+        <div class="row">
+        <div *ngFor="let i of serviciosList" class="col-12 card border-0" style="width: 18rem;">
+            <img src="{{i.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{i.title}}</h5>
+              <p class="card-text text-justify">{{i.desc}}</p>
+              <a href="#" class="btn btn-dark">Agendar cita</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

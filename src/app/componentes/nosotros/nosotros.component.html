@@ -10,12 +10,33 @@
             </div>
           </div>
     </div>
-    <div>
-        <h3 class="ms-5 fw-bold pt-3">Servicios</h3>
+    <div class="container">
+        <h3 class="fw-bold pt-3">Te ayudaremos a mejorar tu salud</h3>
+        <hr>
+        <p class="lh-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus tempus tortor id ullamcorper. Morbi imperdiet quam nibh, quis commodo orci congue et. Mauris finibus nisl non justo sollicitudin, id fringilla odio commodo. Sed orci nunc, egestas non velit a, fringilla sollicitudin sapien. Cras viverra eget lectus vel auctor. Vestibulum leo nibh, volutpat ac purus eu, luctus vulputate purus. Vivamus sed purus a sapien aliquam lacinia sit amet quis leo. Nunc vulputate pellentesque fringilla. </p>
     </div>
-    <div class="container pt-5">
-        <div class="row">
-        <div *ngFor="let i of serviciosList" class="col-12 card border-0" style="width: 18rem;">
+    <div class="container mb-5">
+        <div class="row row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <h3 class="fw-bold pt-3">¡Con resultados garantizados!</h3>
+                <hr>
+                <p>Donec bibendum risus dolor, auctor vestibulum lectus scelerisque vel. Nulla ac nibh augue. Donec dignissim euismod felis ut dignissim. Quisque suscipit gravida ipsum, non accumsan sem pretium a. Morbi faucibus sollicitudin laoreet. Integer nisi lectus, sagittis ut feugiat vitae, blandit a odio. Duis imperdiet venenatis lectus, at feugiat metus viverra a.</p>
+                <br>
+                <p class="fw-bold" style="font-size: 20px;">Te garantizo confianza</p>
+                <hr>
+                <div>
+                    <img src="/assets/backgrounds/firma.png" alt="Firma"
+                    style="height: 70px; width: 120px" class="ms-5">Dr. KALIFA
+                </div>
+            </div>
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1612349316228-5942a9b489c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container pt-5">
+        <div class="row row-cols-1 row-cols-md-4">
+        <div *ngFor="let i of serviciosList" class="card border-0">
             <img src="{{i.image}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{i.title}}</h5>
@@ -24,5 +45,5 @@
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 </div>
